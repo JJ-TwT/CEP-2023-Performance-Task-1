@@ -1,15 +1,21 @@
 Typeracer game elements:
-- Single player: Doesn’t not include multiplayer mode where you could interact and race with other people (too hard to code as I have little experience with JS to implement this aspect)
-- Show the text as a complete paragraph so that the player can see the entire text when typing
-- You would type the words normally (no box/space to type the words into) – Click on the screen before typing
-- Including racing factor: Have an object act as the virtual racer. The object would move along a “racing track” according to how much of the text you have typed finished. There would also be a bar to show how much of the text you have typed (Basically racing against yourself).
-- Typing:
+-	Single player: Doesn’t not include multiplayer mode where you could interact and race with other people (too hard to code as I have little experience with JS to implement this aspect)
+-	Show the text as a complete paragraph so that the player can see the entire text when typing. The text would about 2-4 sentences long, which is about 30-50 words.
+-	You would type the words normally (no box/space to type the words into) – Click on the screen before typing
+-	Including racing factor: Have an object act as the virtual racer. The object would move along a “racing track” according to how much of the text you have typed finished. There would also be a bar to show how much of the text you have typed (Basically racing against yourself).
+-	Typing:
     - Normal typing: The character you are currently typing would be underlined; all other un-typed characters would have a grey font.
     - Correct typing: The character that you typed correctly would have a white font and be highlighted green.
     - Wrong typing: The character you typed wrongly would be highlighted red and have a white font, and you would have to delete your progress to change it. However, you could leave the character wrong and continue typing, anything else that you typed correctly would still be counted as correct and be highlighted green.
-- Results:
+-	Results:
     - Number of words typed + Time it took
     - Wpm – Take the number of words in the text over the total number of seconds it took for the player to finish typing the text. Convert the denominator to 60s to calculate the wpm.
     - Accuracy – Number of characters typed correctly at the end of the entire typing race / Number of characters in the text, times 100%
-    - Include where the text was taken from (book, movie, etc)
+    - Include where the text was taken from (book, movie, etc.)
 
+Explanations for aspects chosen:
+-	[Single player game] The reason why I decided to have a single player game rather than a multiplayer game is because I knew that the multiplayer game would require additional concepts to be added into the code. Since I barely have any programming experience with JavaScript, I decided to start slow rather than taking on a rather ambitious and possibly impossible task. Programming a single player game would be relatively easier as I wouldn’t have to consider the connection between multiple players playing the game. 
+-	[Racing factor] Since I’ve decided to take on a single player approach, I would have to find some other ways to make this typeracer an actual race. Thus, I decided to make it such that you are racing against yourself. Having a virtual racer racing on a track acts as the simulation of an actual race happening. 
+-	[Text] I would have the text to be shown in a paragraph formation so that the player could actually view the entire text while typing. This way, they would not need to hesitate while typing to read what they are to type next. When trying out some typeracers online, I realise the ones that doesn’t show the entire text becomes annoying when you have to wait for the sentences to change before typing the next few words. Additionally, I noticed that most of the typeracers’ texts are usually about 2-4 sentences long, since this amount would not require the players to exert a large amount of effort to type finish the text, but is just enough to provide a valid result of their typing speed. Thus, I also implemented my texts to be about 2-4 sentences long 24-48 words long. 
+-	[Results] In my display, I do not have that much space to include too many results. That’s why I decided to neglect some of the results that are included in other typeracer games, such a graph of your typing speed, etc., as most people don’t really study those results intently. Thus, I decided to include the main results that a player would most likely be looking out for: No. of words typed, Time it took to finish the text, WPM, Accuracy, along with where the text is taken from. For accuracy, I would use the formula (Number of characters typed correctly at the end of the entire typing race / Number of characters in the text, times 100%) instead of the formula that other typeracers use. This is because other typeracers would take into account the errors that are made and the errors that are made and corrected (found out from https://www.speedtypingonline.com/typing-equations). This aspect would require much more calculations inside the program, therefore I decided to neglect it and keep the results simple.
+-	[Typing] These typing elements are common amongst most of the typeracers that I have experimented with. I found that this combination of elements would have a clean and smooth result when doing the typing test. I do not want the program to have chunky animations etc., thus I kept these elements plain instead of extremely complex.
