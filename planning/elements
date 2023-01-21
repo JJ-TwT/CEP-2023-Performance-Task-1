@@ -1,1 +1,14 @@
+Typeracer game elements:
+-	Single player: Doesn’t not include multiplayer mode where you could interact and race with other people (too hard to code as I have little experience with JS to implement this aspect)
+-	Show the text as a complete paragraph so that the player can see the entire text when typing
+-	You would type the words normally (no box/space to type the words into) – Click on the screen before typing
+-	Including racing factor: Have an object act as the virtual racer. The object would move along a “racing track” according to how much of the text you have typed finished. There would also be a bar to show how much of the text you have typed (Basically racing against yourself).
+-	Typing:
+    - Normal typing: The character you are currently typing would be underlined; all other un-typed characters would have a grey font.
+    - Correct typing: The character that you typed correctly would have a white font and be highlighted green.
+    - Wrong typing: The character you typed wrongly would be highlighted red and have a white font, and you would have to delete your progress to change it. However, you could leave the character wrong and continue typing, anything else that you typed correctly would still be counted as correct and be highlighted green.
+-	Results
+    - Wpm – Take the number of words in the text over the total number of seconds it took for the player to finish typing the text. Convert the denominator to 60s to calculate the wpm.
+    - Accuracy – Number of characters typed correctly at the end of the entire typing race / Number of characters in the text, times 100%
+    - Include where the text was taken from (book, movie, etc)
 
