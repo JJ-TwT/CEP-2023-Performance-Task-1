@@ -54,7 +54,7 @@ https://monkeytype.com/
 -	Text is given in a paragraph where you could see all the words.
 -	You would type the words normally (no box/space to type the words into) – Click on the screen before typing
 -	Display: When typing, they would show the time remaining (counting down from 30s)
--	Results include raw results, characters, consistency(accuracy) and time
+-	Results include raw results, characters, consistency(accuracy) and time along with a graph that shows your typing speed and where the mistakes were during the test
 -	Normal typing: The words would have a grey font.
 -	Correct typing: The character you typed correctly would have a white font and you would move on to the next character.
 -	Wrong typing: The character you typed wrongly would have a red font colour, and you would have to delete your progress (of the word) to change it. However, you could leave the character wrong and continue typing; anything else that you typed correctly would still be counted as correct. If you type wrongly and go on to the next word, you would not be able to go back and change the character of the previous word (aka you could only fix your mistakes on the current word you are on).
