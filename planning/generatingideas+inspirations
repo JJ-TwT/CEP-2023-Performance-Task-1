@@ -11,6 +11,7 @@ https://play.typeracer.com/
 - Correct typing: For each correct character you typed, the character, along with the underline, would have a green font colour. 
 - Wrong typing: Starting from the character you typed wrongly, the rest of the characters you typed in would be highlighted red (even if you type the rest of the characters correctly).
     - If you got a character wrong, you would have to delete your progress to the part where you got wrong and start all over again.
+
 https://www.typerush.com/
 - Gave the choice of using boats and cars
 - Text is given in a line. After every character typed correctly, they would move to the left to make space for the remainder of the text.
@@ -20,6 +21,7 @@ https://www.typerush.com/
 - Correct typing: For each correct character you typed, the character would have a grey font colour and move to the left. 
 - Wrong typing: The character you typed wrong would have a red font colour
     - If you got a character wrong, anything to type afterwards that is not the character would not be added – your progress would be stuck on that particular character until you type it correctly (aka you can randomly press keys until you finally get the character correct).
+
 https://www.nitrotype.com/race
 - Used cars as the virtual racer
 - Text is given in a paragraph where you could see all the words.
@@ -30,6 +32,7 @@ https://www.nitrotype.com/race
 - Wrong typing: The character you typed wrongly would be highlighted red.
     - If you got a character wrong, anything to type afterwards that is not the character would not be added – your progress would be stuck on that particular character until you type it correctly (aka you can randomly press keys until you finally get the character correct).
     - There’s a sound effect when you type a character wrongly.
+
 https://typingtestnow.com/app/typing_games/typeracer-type-racer.html --- Bad example
 - Used cars as the virtual racer
 - Text is given in chunks of the entire text.
@@ -40,6 +43,7 @@ https://typingtestnow.com/app/typing_games/typeracer-type-racer.html --- Bad exa
 - Correct typing: For each correct word you typed, the character would have a grey font colour while the indicator (for the character you should be typing) moves on to the next word.
 - Wrong typing: After the wrongly typed word is submitted, the word would have a red font. There is no changing of the word after you submitted it (either right/wrong after you submit it).
     - There’s a honking sound when you submit a wrongly typed word.
+
 https://webflow.com/made-in-webflow/website/Type-Racer-Game
 - No race factor
 - Text is given in a paragraph where you could see all the words.
@@ -49,6 +53,7 @@ https://webflow.com/made-in-webflow/website/Type-Racer-Game
 - Normal typing: There would be a blue underline below the character that you are currently typing
 - Correct typing: The character you typed correctly would be highlighted green and you would move on to the next character.
 - Wrong typing: The character you typed wrongly would be highlighted red, and you would have to delete your progress to change it. However, you could leave the character wrong and continue typing, anything else that you typed correctly would still be counted as correct and be highlighted green.
+
 https://monkeytype.com/
 - No race factor
 - Text is given in a paragraph where you could see all the words.
