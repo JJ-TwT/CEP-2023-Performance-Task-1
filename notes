@@ -1,2 +1,6 @@
-https://www.youtube.com/watch?v=R-7eQIHRszQ&t=169s
-  - auto focus onto quote
+logic stuff:
+- compare words 1 to 1
+- make the bar go up when typing the words
+- calculate wpm, accuracy
+- make a timer
+- have the program end when the text is finished
