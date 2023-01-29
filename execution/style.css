@@ -19,6 +19,11 @@ div.middle{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+div.rule{
+  position: fixed;
+  left: 20px;
+}
+
 div.tracking{
   display: flex;
   justify-content: center;
@@ -95,6 +100,21 @@ div.reading{
   border-radius: 10px;
 }
 
+p.Rules1{
+  position: fixed;
+  top: 30px;
+}
+
+p.Rules2{
+  position: fixed;
+  top: 55px;
+}
+
+p.Rules3{
+  position: fixed;
+  top: 80px;
+}
+
 p.thanks{
   text-align: center;
   position: fixed;
@@ -124,7 +144,7 @@ p.accuracy{
 
 p.noWords{
   position: fixed;
-  left: 515px;
+  left: 525px;
   color: #7b0299;
   font-size: 18px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -134,7 +154,7 @@ p.noWords{
 
 p.time{
   position: fixed;
-  left: 710px;
+  left: 720px;
   color: #7b0299;
   font-size: 18px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
