@@ -8,6 +8,7 @@ const accuracy = document.getElementById('totalAccuracy')
 var timer
 
 function getRandomQuote(Number){
+  //different texts to type for user
   var quotes = [
     "He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors", 
     "He was wearing long robes, a purple cloak that swept the ground, and high-heeled, buckled boots. His blue eyes were light, bright, and sparkling behind half-moon spectacles and his nose was very long and crooked, as though it has been broken at least twice",
@@ -46,13 +47,14 @@ quoteInputElement.addEventListener('input', () => {
   const arrayValue = quoteInputElement.value.split('')
 
 
-  let correct = true;
+  let allCorrect = true;
+
   arrayQuote.forEach((characterSpan, index) => {
     const character = arrayValue[index]
     if (character == null){
       characterSpan.classList.remove('correct')
       characterSpan.classList.remove('wrong')
-      correct = false
+      allCorrect = false
     }
     else if (character === characterSpan.innerText){
       characterSpan.classList.add('correct')
@@ -61,17 +63,24 @@ quoteInputElement.addEventListener('input', () => {
     else {
       characterSpan.classList.remove('correct')
       characterSpan.classList.add('wrong')
-      correct = false
+      allCorrect = false
     }
   })
 
-  var lastCharacter = arrayQuote[arrayQuote.length - 1];
-  if (lastCharacter = correct) {
-    console.log('finished')
+  var lastCharacter = arrayValue[arrayQuote.length - 1];
+  if (lastCharacter != null) {
     console.log(timerElement.innerText)
     resultTime.innerText = timerElement.innerText
     stopTimer();
   }
+
+  if (allCorrect) {
+    accuracy.innerText = '100'
+  }
+  else {
+    accuracy.innerText = 'Not 100'
+  }
+
 }) 
 
 function wordcount(){
@@ -84,7 +93,7 @@ function wordcount(){
       count ++
     }
   }
-  
+
   totalWordCount.innerText = count
   const denominator = resultTime.innerText
   wpm.innerText = Math.floor(count / denominator * 60)
