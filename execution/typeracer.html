@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typeracer Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: lightblue">
+    <div id="all">
+      <div class="middle">
+        <div id="header">
+          <div class="relative1">
+            <h1><u>JJ's typeracer game!</u></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="timer" id="timer"></div>
+
+      <div class="reading" id="text-display">
+        <strong>
+          Mr. Dursley was the director of a firm called Grunnings, which made
+          drills. He was a big, beefy man with hardly any neck, although he did
+          have a very large mustache. Mrs. Dursley was thin and blonde and had
+          nearly twice the usual amount of neck, which came in very useful as
+          she spent so much of her time craning over garden fences, spying on
+          the neighbors. The Dursleys had a small son called Dudley and in their
+          opinion there was no finer boy anywhere.
+        </strong>
+      </div>
+
+      <div class="tracking">
+        <textarea
+          id="input"
+          class="input"
+          oninput="wordcount()"
+          cols="30"
+          rows="4"
+          placeholder="Start typing..."
+          autofocus
+        ></textarea>
+      </div>
+
+      <div class="bar">
+        <div class="container">
+          <div class="completion1 completion2">60%</div>
+        </div>
+        <img
+          class="broom"
+          src="images/Nimbus_2000_1-removebg-preview.png"
+          alt=""
+        />
+        <img class="goldensnitch" src="images/golden_snitch.png" alt="" />
+      </div>
+
+      <div class="results">
+        <h3>Results:</h3>
+        <p class="wpm">Speed: <u id="speedWPM"> </u> wpm,</p>
+        <p class="accuracy">Accuracy: <u id="totalAccuracy">nil</u> %,</p>
+        <p class="noWords">No. of words: <u id="numberWords">nil</u> words,</p>
+        <p class="time">Time taken: <u id="timeTaken">nil</u> s,</p>
+      </div>
+      <div class="credits">
+        <a
+          class="github"
+          href="https://github.com/JJ-TwT/CEP-2023-Performance-Task-1.git"
+          target="_blank"
+          >Check out my Github</a
+        >
+        <p class="thanks">😊Thanks so much for playing!</p>
+        <a
+          class="comments"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdUN0Q4aIIa-ufipr5vVLV5-08i3McYhgLslW-q1uUFA6y99g/viewform?vc=0&c=0&w=1&flr=0"
+          target="_blank"
+          >Provide your comments</a
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
