@@ -1,7 +1,7 @@
 FEATURES ADDED
 ---------------
 - Rules
-
+  - The rules are placed next to the header so that the users can easily read them before playing the game. I feel like the 3 rules that I stated are the most important, as they are the fundamental rules that the users must follow for the game to run smoothly. On top of that, some rules help to explain how to play the typeracer (since the rule - pressing space after finishing the text - is something that is not included in other typeracer games).
 - Timer
   - For the timer, I implemented it such that it would only start when the user inputs something into the text area. Whenever you load into the page, the timer would not show up since nothing is inputred yet, but it would appear in the top right hand corner when the user plays the typeracer. The timer stops when the user plays the typeracer. The timer stops when the user has inputted the same amount of characters as the text itself, regardless of whether it is typed correctly or not. I also coded such that the timer would only start and stop once, so that the timer would not continue reloading on and on. Once the timer ends, the time would be placed into the result section and also be used to calculate the wpm of the user.
 - Text
