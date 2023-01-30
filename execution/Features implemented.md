@@ -14,7 +14,7 @@ FEATURES ADDED
 - Results section
   - 
   - Time: The time is taken from the timer at the top right of the screen. After the user has keyed in the last character of the text, the time would also be reflected in the "time" section of the results for the user to see.
-  - Wpm: 
+  - Wpm: After the user has finished typing the texts, they are required to hit the spacebar so that the wpm can load (i honestly don't know why it is like this). The wpm is calculated as such: number of words / time (in seconds) * 60. The wpm would then be reflected in the "wpm" section of the results so that the users can check out their speed.
   - Accuracy:
   - Words: The number of words is based on input of the users. It counts the number of spaces inside the input, and when the user is typing, the number of words is always reflected in the "word" section in the results. When the user has reached the number of characters inside the entire text, the number of words that has been inputed would be recorded and also be used to calculate the wpm (so that the wpm would not change all the time, although the word count would still continue to increase should the user continue typing).
   
