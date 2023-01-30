@@ -9,6 +9,7 @@ FEATURES ADDED
 - Input area
 
 - "Bar" 
+  - In this section, I wanted to create a bar which would fill up based on the completion of the text. I was planning to implement it such that it would follow the percentage of the number of characters over the total number of characters. I would also have made the broom slowly follow the bar increase and reach the golden snitch (reference to Harry Potter Quidditch). Unfortunately, I did not have enough time to complete this aspect of the project as I had to focus on the indispensable elements of a typeracer first, before working on the aesthetics. 
 
 - Results section
   o 
