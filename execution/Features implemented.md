@@ -5,7 +5,7 @@ FEATURES ADDED
 - Timer
 
 - Text
-
+  - We have the random text (to be typed) that would be picked from an array of strings. This allows the user to have a variety of texts to type so they can continue challenging themselves. The numerous texts were all chosen from Harry Potter and the Philosopher's Stone, to keep within the theme of Harry Potter. I made sure that the text to be about 3 - 4 rows, since I believe this is around the optimum range for the text in typeracer games. Should the text be tremendously long, the player would just lose interest and focus at the halfway point. If it's too short, the user could just attain a high wpm easily, which defeats the purpose of the typeracer.
 - Input area
 
 - "Bar" 
