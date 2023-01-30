@@ -3,7 +3,7 @@ FEATURES ADDED
 - Rules
 
 - Timer
-
+  - For the timer, I implemented it such that it would only start when the user inputs something into the text area. Whenever you load into the page, the timer would not show up since nothing is inputred yet, but it would appear in the top right hand corner when the user plays the typeracer. The timer stops when the user plays the typeracer. The timer stops when the user has inputted the same amount of characters as the text itself, regardless of whether it is typed correctly or not. I also coded such that the timer would only start and stop once, so that the timer would not continue reloading on and on. Once the timer ends, the time would be placed into the result section and also be used to calculate the wpm of the user.
 - Text
   - We have the random text (to be typed) that would be picked from an array of strings. This allows the user to have a variety of texts to type so they can continue challenging themselves. The numerous texts were all chosen from Harry Potter and the Philosopher's Stone, to keep within the theme of Harry Potter. I made sure that the text to be about 3 - 4 rows, since I believe this is around the optimum range for the text in typeracer games. Should the text be tremendously long, the player would just lose interest and focus at the halfway point. If it's too short, the user could just attain a high wpm easily, which defeats the purpose of the typeracer.
 - Input area
