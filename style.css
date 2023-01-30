@@ -25,10 +25,8 @@ body{
   }
   
   div.tracking{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    position: absolute;
+    left: 11%;
   }
   
   div.credits{
@@ -123,7 +121,7 @@ body{
   
   p.wpm{
     position: absolute;
-    left: 17%;
+    left: 18%;
     top: 76%;
     color: #7b0299;
     font-size: 18px;
@@ -134,7 +132,7 @@ body{
   
   p.accuracy{
     position: absolute;
-    left: 27.7%;
+    left: 30%;
     top: 76%;
     color: #7b0299;
     font-size: 18px;
@@ -145,7 +143,7 @@ body{
   
   p.noWords{
     position: absolute;
-    left: 40.4%;
+    left: 43%;
     top: 76%;
     color: #7b0299;
     font-size: 18px;
@@ -156,7 +154,7 @@ body{
   
   p.time{
     position: absolute;
-    left: 55.3%;
+    left: 60%;
     top: 76%;
     color: #7b0299;
     font-size: 18px;
