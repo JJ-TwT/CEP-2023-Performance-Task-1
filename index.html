@@ -1,144 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typeracer Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: lightblue">
+    <div id="all">
+      <div class="middle">
+        <div id="header">
+          <div class="relative1">
+            <h1><u>JJ's typeracer game!</u></h1>
+          </div>
+        </div>
+      </div>
+      <div class="rule">
+        <ol>
+          <li>The timer would start once you start typing</li>
+          <li>You are expected to complete the typeracer</li>
+          <li>
+            Once you type the last character, hit spacebar so the wpm can load
+          </li>
+        </ol>
+      </div>
+      <div class="timer" id="timer"></div>
 
-const quoteDisplayElement = document.getElementById('text-display');
-const quoteInputElement =  document.getElementById('input');
-const timerElement =  document.getElementById('timer');
-const resultTime = document.getElementById('timeTaken')
-const totalWordCount = document.getElementById('numberWords')
-const wpm = document.getElementById('speedWPM')
-const accuracy = document.getElementById('totalAccuracy')
+      <br />
+      <br />
 
+      <center>
+        <div class="reading" id="text-display">
+          <strong> Text </strong>
+        </div>
+      </center>
 
-var timer
+      <div class="tracking">
+        <textarea
+          id="input"
+          class="input"
+          oninput="wordcount()"
+          cols="30"
+          rows="4"
+          placeholder="Start typing..."
+          autofocus
+        ></textarea>
+      </div>
 
-function getRandomQuote(Number){
+      <div class="bar">
+        <div class="container">
+          <div class="completion1 completion2">60%</div>
+        </div>
+        <img
+          class="broom"
+          src="images/Nimbus_2000_1-removebg-preview.png"
+          alt=""
+        />
+        <img class="goldensnitch" src="images/golden_snitch.png" alt="" />
+      </div>
 
-  var quotes = [
-    "Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors", 
-    "He was wearing long robes, a purple cloak that swept the ground, and high-heeled, buckled boots. His blue eyes were light, bright, and sparkling behind half-moon spectacles and his nose was very long and crooked, as though it has been broken at least twice",
-    "The four Houses are called Gryffindor, Hufflepuff, Ravenclaw, and Slytherin. Each House has its own noble history and each has produced outstanding witches and wizards",
-    "Harry had a lot of trouble keeping his mind on his lessons that day. It kept wandering up to the dormitory where his new broomstick was lying under his bed, or straying off to the Quidditch field where he'd be learning to play that night",
-    "Barrels of slimy stuff stood on the floor; jars of herbs, dried roots, and bright powders lined the walls; bundles of feathers, strings of fangs, and snarled claws hung from the ceiling",
-    "They had a good time eating the Every Flavor Beans. Harry got toast, coconut, baked bean, strawberry, curry, grass, coffee, sardine, and was even brave enough to nibble the end off a funny gray one Ron wouldn't touch, which turned out to be pepper",
-    "Easily the most boring class was History of Magic, which was the only one taught by a ghost. Professor Binns had been very old indeed when he had fallen asleep in front of the staff room fire and got up next morning to teach, leaving his body behind him.",
-    "Not my daughter, you bitch!",
-    "Professor McGonagall was looking at Ron and Harry. Harry had never seen her look so angry. Her lips were white. Hopes of winning fifty points for Gryffindor faded quickly from Harry's mind",
-    "Harry was speeding toward the ground when the crowd saw him clap his hand to his mouth as though he was about to be sick - he hit the field on all fours - coughed - and something gold fell into his hand",
-    "Harry followed Hagrid out onto the rock. The sky was quite clear now and the sea gleamed in the sunlight. The boat Uncle Vernon had hired was still there, with a lot of water in the bottom after the storm"
-  ];
-
-var randomQuote = 0;
-
-if ((Number === undefined) || (Number >= quotes.length )){
-  randomQuote = Math.floor(Math.random() * quotes.length);
-}
-else {
-  randomQuote = Number;
-}
-
-
-var selectedQuote = quotes[randomQuote];
-console.log(selectedQuote);
-return selectedQuote;
-}
-
-
-quoteInputElement.addEventListener('input', function(){
-  startTimer()
-}, {once : true})
-
-
-quoteInputElement.addEventListener('input', () => {
-  console.log('changed')
-  const arrayQuote = quoteDisplayElement.querySelectorAll('span')
-  const arrayValue = quoteInputElement.value.split('')
-
-
-  let allCorrect = true;
-
-
-  arrayQuote.forEach((characterSpan, index) => {
-    const character = arrayValue[index]
-    if (character == null){
-      characterSpan.classList.remove('correct')
-      characterSpan.classList.remove('wrong')
-      allCorrect = false
-    }
-    else if (character === characterSpan.innerText){
-      characterSpan.classList.add('correct')
-      characterSpan.classList.remove('wrong')
-    }
-    else {
-      characterSpan.classList.remove('correct')
-      characterSpan.classList.add('wrong')
-      allCorrect = false
-    }
-  })
-
-
-  var lastCharacter = arrayValue[arrayQuote.length - 1];
-  if (lastCharacter != null) {
-    console.log(timerElement.innerText)
-    resultTime.innerText = timerElement.innerText
-    stopTimer();
-  }
-
-
-  if (allCorrect) {
-    accuracy.innerText = '100'
-  }
-  else {
-    accuracy.innerText = 'Not 100'
-  }
-
-}) 
-
-
-function wordcount(){
-  var fullText = document.getElementById("input").value
-  console.log(fullText.length)
-  var count = 0;
-  var split = fullText.split(' ')
-  for (var i=0; i<split.length; i++){
-    if(split[i] != ""){
-      count ++
-    }
-  }
-
-  totalWordCount.innerText = count
-  const denominator = resultTime.innerText
-  wpm.innerText = Math.floor(count / denominator * 60)
-}
-
-
-async function getInputQuote(){
-  const selectedQuote = await getRandomQuote();
-  quoteDisplayElement.innerHTML = ''
-  selectedQuote.split('').forEach(character => {
-    const characterSpan = document.createElement('span')
-    characterSpan.innerText = character
-    quoteDisplayElement.appendChild(characterSpan)
-  })
-  quoteInputElement.value = null;
-}
-
-
-let startTime
-function startTimer(){
-  timerElement.innerText = 0
-  startTime = new Date()
-  timer = setInterval(() => {
-    timerElement.innerText = getTimerTime()
-  }, 1000)
-}
-
-
-function getTimerTime(){
-  return Math.floor((new Date() - startTime) / 1000)
-}
-
-
-function stopTimer(){
-  clearInterval(timer);
-}
-
-getInputQuote();
+      <div class="results">
+        <h3>Results:</h3>
+        <p class="wpm">Speed: <u id="speedWPM">nil</u> wpm,</p>
+        <p class="accuracy">Accuracy: <u id="totalAccuracy">nil</u> %,</p>
+        <p class="noWords">No. of words: <u id="numberWords">nil</u> words,</p>
+        <p class="time">Time taken: <u id="timeTaken">nil</u> s,</p>
+      </div>
+      <div class="credits">
+        <a
+          class="github"
+          href="https://github.com/JJ-TwT/CEP-2023-Performance-Task-1.git"
+          target="_blank"
+          >Check out my Github</a
+        >
+        <p class="thanks">😊Thanks so much for playing!</p>
+        <a
+          class="comments"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdUN0Q4aIIa-ufipr5vVLV5-08i3McYhgLslW-q1uUFA6y99g/viewform?vc=0&c=0&w=1&flr=0"
+          target="_blank"
+          >Provide your comments</a
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
