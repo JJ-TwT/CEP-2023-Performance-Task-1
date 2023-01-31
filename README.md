@@ -2,6 +2,7 @@
 
 - Link to the typeracer game 😊
   - https://jj-twt.github.io/CEP-2023-Performance-Task-1/
+  - Please note that the organisation of the webpage would be messy since the positions are only correct for my computer screen. Sorry 😢
 
 - What it does 📊
   - It acts like any other typeracer, where you would type the given text and you would receive your speed and accuracy at the end of typing test. In the case of my typeracer, it is Harry Potter themed! Texts that are give are from the book Harry Potter and the Philosopher's Stone. 
