@@ -136,7 +136,7 @@ body{
   
   p.accuracy{
     position: absolute;
-    left: 32%;
+    left: 35%;
     top: 75%;
     color: #7b0299;
     font-size: 18px;
@@ -147,7 +147,7 @@ body{
   
   p.noWords{
     position: absolute;
-    left: 46%;
+    left: 49%;
     top: 75%;
     color: #7b0299;
     font-size: 18px;
@@ -158,7 +158,7 @@ body{
   
   p.time{
     position: absolute;
-    left: 63%;
+    left: 68%;
     top: 75%;
     color: #7b0299;
     font-size: 18px;
