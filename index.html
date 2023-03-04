@@ -14,6 +14,7 @@
           <div class="relative1">
             <h1><u>JJ's typeracer game!</u></h1>
           </div>
+          <div class="timer" id="timer"></div>
         </div>
       </div>
       <div class="rule">
@@ -25,35 +26,37 @@
           </li>
         </ol>
       </div>
-      <div class="timer" id="timer"></div>
 
       <br />
       <br />
-
-      <center>
-        <div class="reading" id="text-display">
-          <strong> Text </strong>
+      <div class="middleSection">
+        <center>
+          <div class="reading" id="text-display">
+            <strong> Text </strong>
+          </div>
+        </center>
+        <center>
+        <div class="tracking">
+          <textarea
+            id="input"
+            class="input"
+            oninput="wordcount()"
+            cols="30"
+            rows="4"
+            placeholder="Start typing..."
+            autofocus
+          ></textarea>
         </div>
-      </center>
-
-      <div class="tracking">
-        <textarea
-          id="input"
-          class="input"
-          oninput="wordcount()"
-          cols="30"
-          rows="4"
-          placeholder="Start typing..."
-          autofocus
-        ></textarea>
+        <center>
       </div>
 
       <div class="bar">
         <div class="container">
-          <div class="completion1 completion2">60%</div>
+          <div class="completion1" id="completionPercentage">Start typing 😄</div>
         </div>
         <img
           class="broom"
+          id="nimbus"
           src="images/Nimbus_2000_1-removebg-preview.png"
           alt=""
         />
