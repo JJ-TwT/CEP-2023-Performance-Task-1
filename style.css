@@ -2,7 +2,13 @@
 body{
     overflow: hidden;
   }
-  
+
+  div.middleSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   div.relative1{
     position: relative;
     border: 3px solid purple;
@@ -26,8 +32,9 @@ body{
   }
   
   div.tracking{
-    position: absolute;
-    left: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   div.credits{
@@ -51,22 +58,16 @@ body{
   div.container{
     position: absolute;
     top: 70%;
-    width: 1000px;
+    width: 79%;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: #9c8cff;
   }
   
   div.completion1{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
-  }
-  
-  div.completion2{
-    width: 60%;
-    background-color: #9c8cff;
-    border-radius: 10px;
+    color: aliceblue;
   }
   
   h1 {
@@ -77,21 +78,23 @@ body{
   h3 {
     position: absolute;
     left: 11%;
-    top: 76%;
+    top: 75%;
   }
   
   div.timer{
-    position: fixed;
-    bottom: 490px;
-    left: 1050px;
+    position: absolute;
+    left: 75%;
+    border: 2px solid purple;
+    background: plum;
     font-size: x-large;
+    border-radius: 5px;
   }
   
   div.reading{
     font-size: 20px;
     font-weight: bold;
     font-family:'Courier New', Courier, monospace;
-    width: 1000px;
+    width: 79%;
     text-align: left;
     margin: 20px;
     border: 1px solid black;
@@ -123,7 +126,7 @@ body{
   p.wpm{
     position: absolute;
     left: 18%;
-    top: 76%;
+    top: 75%;
     color: #7b0299;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -134,7 +137,7 @@ body{
   p.accuracy{
     position: absolute;
     left: 30%;
-    top: 76%;
+    top: 75%;
     color: #7b0299;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -144,8 +147,8 @@ body{
   
   p.noWords{
     position: absolute;
-    left: 43%;
-    top: 76%;
+    left: 45%;
+    top: 75%;
     color: #7b0299;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -155,8 +158,8 @@ body{
   
   p.time{
     position: absolute;
-    left: 60%;
-    top: 76%;
+    left: 62%;
+    top: 75%;
     color: #7b0299;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -178,8 +181,9 @@ body{
   
   .input{
     position: fixed;
-    bottom: 200px;
-    width: 1000px;
+    left: 10.5%;
+    top: 41%;
+    width: 79%;
     height: 120px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -195,8 +199,8 @@ body{
   img.broom {
     width: 80px;
     position: absolute;
+    left: 10%;
     top: 71%;
-    right: 85%;
 
   }
   
@@ -204,7 +208,7 @@ body{
     width: 35px;
     position: absolute;
     top: 70%;
-    left: 87%;
+    left: 88%;
   }
   
   .correct {
